@@ -61,7 +61,8 @@
               Grid.Row="9"
               Grid.Column="3"
               Margin="60, 10"
-              Content="Opgave 4" />
+              Content="Opgave 4"
+              Click="opg4Button_Click" />
       <Button x:Name="opg5Button"
               Grid.Row="10"
               Grid.Column="0"

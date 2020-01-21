@@ -71,12 +71,35 @@ namespace WpfAppIntroduktionString.BIZ
                     case 'y':
                         result++;
                         break;
+                    case 'æ':
+                        result++;
+                        break;
+                    case 'ø':
+                        result++;
+                        break;
+                    case 'å':
+                        result++;
+                        break;
                     default:
                         break;
                 }
             }
 
             return result;
+        }
+
+        public string RemoveAllVowels(TextBox textBox)
+        {
+            string output = textBox.Text.ToLower().Replace("a", "")
+                .Replace("e", "")
+                .Replace("i", "")
+                .Replace("o", "")
+                .Replace("u", "")
+                .Replace("y", "")
+                .Replace("æ", "")
+                .Replace("ø", "")
+                .Replace("å", "");
+            return output;
         }
     }
 }
