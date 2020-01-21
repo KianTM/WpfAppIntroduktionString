@@ -122,5 +122,42 @@ namespace WpfAppIntroduktionString.BIZ
             }
             return count;
         }
+
+        public string CountNumberOfWordLength(TextBox textBox)
+        {
+            SortedDictionary<int, int> dictionary = new SortedDictionary<int, int>();
+            string output = "";
+
+            string[] strings = textBox.Text.Split(' ');
+
+            foreach (var i in strings)
+            {
+                int length = i.Length;
+                int value = 0;
+
+                if (dictionary.TryGetValue(length, out value))
+                {
+                    value++;
+                    dictionary[length] = value;
+                }
+                else
+                {
+                    dictionary.Add(length, 1);
+                }
+            }
+
+            StringBuilder sb = new StringBuilder();
+
+            foreach (KeyValuePair<int, int> pair in dictionary)
+            {
+                string text = $"Ord med længde {pair.Key.ToString()}: {pair.Value.ToString()} stk";
+
+                sb.AppendLine(text);
+            }
+
+            output = sb.ToString();
+
+            return output;
+        }
     }
 }

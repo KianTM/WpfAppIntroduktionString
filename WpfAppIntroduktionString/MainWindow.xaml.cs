@@ -45,5 +45,10 @@ namespace WpfAppIntroduktionString
                     + cb.SearchAndReplace(textBoxLeft, inputTextBox.Text);
             }
         }
+
+        private void opg6Button_Click(object sender, RoutedEventArgs e)
+        {
+            textBoxRight.Text = cb.CountNumberOfWordLength(textBoxLeft);
+        }
     }
 }
