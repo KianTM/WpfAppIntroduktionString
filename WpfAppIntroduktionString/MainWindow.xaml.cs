@@ -36,5 +36,13 @@ namespace WpfAppIntroduktionString
         {
             textBoxRight.Text = cb.RemoveAllVowels(textBoxLeft);
         }
+
+        private void opg5Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(inputTextBox.Text))
+            {
+                textBoxRight.Text = cb.SearchAndReplace(textBoxLeft, inputTextBox.Text);
+            }
+        }
     }
 }

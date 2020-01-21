@@ -67,7 +67,8 @@
               Grid.Row="10"
               Grid.Column="0"
               Margin="60, 10"
-              Content="Opgave 5" />
+              Content="Opgave 5"
+              Click="opg5Button_Click" />
       <Button x:Name="opg6Button"
               Grid.Row="10"
               Grid.Column="1"
@@ -83,7 +84,8 @@
               Grid.Column="3"
               Margin="60, 10"
               Content="Opgave 8" />
-      <TextBox Grid.Row="11"
+      <TextBox x:Name="inputTextBox"
+               Grid.Row="11"
                Grid.Column="0"
                Margin="60, 10" />
    </Grid>
