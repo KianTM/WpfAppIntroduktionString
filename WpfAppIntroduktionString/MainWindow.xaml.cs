@@ -30,14 +30,19 @@ namespace WpfAppIntroduktionString
             cb.GetTestString(textBoxLeft);
         }
 
-        private void opg8Button_Click(object sender, RoutedEventArgs e)
+        private void opg1Button_Click(object sender, RoutedEventArgs e)
         {
             textBoxRight.Text = cb.CountAllLines(textBoxLeft).ToString();
         }
 
-        private void opg1Button_Click(object sender, RoutedEventArgs e)
+        private void opg2Button_Click(object sender, RoutedEventArgs e)
         {
             textBoxRight.Text = cb.CountAllChars(textBoxLeft).ToString();
+        }
+
+        private void opg3Button_Click(object sender, RoutedEventArgs e)
+        {
+            textBoxRight.Text = cb.CountAllVowels(textBoxLeft).ToString();
         }
     }
 }

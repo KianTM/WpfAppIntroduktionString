@@ -44,5 +44,39 @@ namespace WpfAppIntroduktionString.BIZ
 
             return result;
         }
+
+        public int CountAllVowels(TextBox textBox)
+        {
+            int result = 0;
+
+            foreach (char c in textBox.Text)
+            {
+                switch (c)
+                {
+                    case 'a':
+                        result++;
+                        break;
+                    case 'e':
+                        result++;
+                        break;
+                    case 'i':
+                        result++;
+                        break;
+                    case 'o':
+                        result++;
+                        break;
+                    case 'u':
+                        result++;
+                        break;
+                    case 'y':
+                        result++;
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            return result;
+        }
     }
 }
