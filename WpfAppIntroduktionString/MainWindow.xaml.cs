@@ -41,7 +41,8 @@ namespace WpfAppIntroduktionString
         {
             if (!string.IsNullOrWhiteSpace(inputTextBox.Text))
             {
-                textBoxRight.Text = cb.SearchAndReplace(textBoxLeft, inputTextBox.Text);
+                textBoxRight.Text = $"Ordet {inputTextBox.Text} blev fundet {cb.CountStringOccurrences(textBoxLeft.Text, inputTextBox.Text)} gange og er blevet markeret med #>\n\n"
+                    + cb.SearchAndReplace(textBoxLeft, inputTextBox.Text);
             }
         }
     }
