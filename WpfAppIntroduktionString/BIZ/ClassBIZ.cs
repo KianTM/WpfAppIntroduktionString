@@ -37,5 +37,12 @@ namespace WpfAppIntroduktionString.BIZ
 
             return result;
         }
+
+        public int CountAllChars(TextBox textBox)
+        {
+            int result = textBox.Text.Trim().Length;
+
+            return result;
+        }
     }
 }

@@ -34,5 +34,10 @@ namespace WpfAppIntroduktionString
         {
             textBoxRight.Text = cb.CountAllLines(textBoxLeft).ToString();
         }
+
+        private void opg1Button_Click(object sender, RoutedEventArgs e)
+        {
+            textBoxRight.Text = cb.CountAllChars(textBoxLeft).ToString();
+        }
     }
 }
