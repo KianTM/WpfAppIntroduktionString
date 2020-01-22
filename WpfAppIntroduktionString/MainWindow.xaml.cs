@@ -50,5 +50,10 @@ namespace WpfAppIntroduktionString
         {
             textBoxRight.Text = cb.CountNumberOfWordLength(textBoxLeft);
         }
+
+        private void opg7Button_Click(object sender, RoutedEventArgs e)
+        {
+            textBoxRight.Text = cb.CountAllWords(textBoxLeft);
+        }
     }
 }

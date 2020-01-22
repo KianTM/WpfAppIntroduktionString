@@ -33,12 +33,13 @@
                Grid.ColumnSpan="2"
                Grid.RowSpan="9"
                Margin="10"
-               />
+               ScrollViewer.VerticalScrollBarVisibility="Visible" />
       <TextBox x:Name="textBoxRight"
                Grid.ColumnSpan="2"
                Grid.RowSpan="9"
                Grid.Column="2"
-               Margin="10" />
+               Margin="10"
+               ScrollViewer.VerticalScrollBarVisibility="Visible"/>
       <Button x:Name="opg1Button"
               Grid.Row="9"
               Grid.Column="0"
@@ -79,7 +80,8 @@
               Grid.Row="10"
               Grid.Column="2"
               Margin="60, 10"
-              Content="Opgave 7" />
+              Content="Opgave 7"
+              Click="opg7Button_Click" />
       <Button x:Name="opg8Button"
               Grid.Row="10"
               Grid.Column="3"
