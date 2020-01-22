@@ -86,7 +86,8 @@
               Grid.Row="10"
               Grid.Column="3"
               Margin="60, 10"
-              Content="Opgave 8" />
+              Content="Opgave 8"
+              Click="opg8Button_Click" />
       <TextBox x:Name="inputTextBox"
                Grid.Row="11"
                Grid.Column="0"

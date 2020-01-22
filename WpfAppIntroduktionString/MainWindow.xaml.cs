@@ -55,5 +55,10 @@ namespace WpfAppIntroduktionString
         {
             textBoxRight.Text = cb.CountAllWords(textBoxLeft);
         }
+
+        private void opg8Button_Click(object sender, RoutedEventArgs e)
+        {
+            cb.CutAwayLastLetterWhereWordIsLongerThan3Chars(textBoxLeft, textBoxRight);
+        }
     }
 }
