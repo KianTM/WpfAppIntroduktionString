@@ -227,7 +227,7 @@ namespace WpfAppIntroduktionString.BIZ
                 newFinalText += newLine + System.Environment.NewLine;
             }
 
-            newText.Text = newFinalText;
+            newText.Text = "Teksten til venstre hvor alle ord der er længere end tre bogstaver har sidste bogstav fjernet:\n\n" + newFinalText;
         }
     }
 }

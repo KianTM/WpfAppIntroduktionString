@@ -19,22 +19,22 @@ namespace WpfAppIntroduktionString
 
         private void opg1Button_Click(object sender, RoutedEventArgs e)
         {
-            textBoxRight.Text = cb.CountAllLines(textBoxLeft).ToString();
+            textBoxRight.Text = $"Linjer i alt: {cb.CountAllLines(textBoxLeft).ToString()}";
         }
 
         private void opg2Button_Click(object sender, RoutedEventArgs e)
         {
-            textBoxRight.Text = cb.CountAllChars(textBoxLeft).ToString();
+            textBoxRight.Text = $"Bogstaver i alt: {cb.CountAllChars(textBoxLeft).ToString()}";
         }
 
         private void opg3Button_Click(object sender, RoutedEventArgs e)
         {
-            textBoxRight.Text = cb.CountAllVowels(textBoxLeft).ToString();
+            textBoxRight.Text = $"Vokaler i alt: {cb.CountAllVowels(textBoxLeft).ToString()}";
         }
 
         private void opg4Button_Click(object sender, RoutedEventArgs e)
         {
-            textBoxRight.Text = cb.RemoveAllVowels(textBoxLeft);
+            textBoxRight.Text = "Teksten i venstre kasse uden vokaler:\n\n" + cb.RemoveAllVowels(textBoxLeft);
         }
 
         private void opg5Button_Click(object sender, RoutedEventArgs e)
